@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prevent GPS spoofing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div id="preForm">
+                Drone Speed(m/s):<input type="number" id="droneSpeedInput">
+                <!-- <select class="custom-select" id="droneSpeedInput">
+                    <option selected>Drone Speed</option>
+                    <option value="5">5m/s</option>
+                    <option value="10">10m/s</option>
+                    <option value="15">15m/s</option>
+                </select> -->
+                <br>
+                Height(m):<input type="number" id="heightInput">
+                <button id="heightSubmit">Submit</button>
+                <!-- <select class="custom-select" id="rangeInput">
+                    <option selected>Range</option>
+                    <option value="50">50m</option>
+                    <option value="100">100m</option>
+                    <option value="200">200m</option>
+                </select> -->
+                <!-- <select class="custom-select" id="heightInput">
+                    <option selected>Height</option>
+                    <option value="1200">1200m</option>
+                </select> -->
+                <!--<div class="custom-file">
+                    <input type="file" class="custom-file-input" id="imageInput">
+                    <label class="custom-file-label" for="imageInput">Choose file</label>
+                </div> -->
+            </div>
+            <h4 id="clickText">
+                Click on the start position
+            </h4>
+            <div id="main">
+                
+                <div class="row" id="controlPanel">
+                    x:<input type="number" id="attackMetersX">
+                    y:<input type="number" id="attackMetersY">
+                    <button id="attackBtn" type="">Attack GPS</button>
+                    <br>
+                    <h5>Frames Until now: <span id="framesCounter">0</span></h5>
+                </div> 
+            </div>       
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</body>
+</html>
